@@ -40,13 +40,18 @@ body {
 }
 
 /* Product Grid */
-.product-grid {
-    display:flex;
-    flex-direction: column;
-    width: 100vw;
-    align-items: center;
-    justify-content: center;
+.product-grid h1 {
+  text-align: center;
+  font-size: 32px;
+  color: #2c3e50;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  border-bottom: 3px solid #4CAF50;
+  display: block;
+  margin: 100px auto 10px; /* Center horizontally */
+
+  padding-bottom: 5px;
 }
+
 .product-list {
     display: flex;
     flex-wrap: wrap;
@@ -109,6 +114,11 @@ body {
 
 .product-button:hover {
     background-color: #c0392b;
+}
+
+.product-button.added-to-cart {
+    background-color: gray; /* Gray when product is added */
+    cursor: not-allowed;
 }
 
 /* Pseudo-elements - Sale badge */
